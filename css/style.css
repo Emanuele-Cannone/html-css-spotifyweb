@@ -48,6 +48,7 @@
 .sx,
 .dx{
   float: left;
+  height: calc(100% - 140px);
 }
 
 /*box dx*/
@@ -75,31 +76,63 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 60px;
+  height: (100% - 140px);
 }
 
 .main-box-sx{
   min-height: 150px;
   overflow-y: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+#logo{
+  font-size: 50px;
+}
 
-
-
-
-
-
-
-
-
+span.icon{
+  font-size: 30px;
+  padding: 5px;
+}
 
 /*footer*/
 
 .footer{
   height: 60px;
   background-color: lightgray;
-  position: fixed;
   z-index: 1;
   width: 100%;
   left: 0;
   bottom: 0;
+}
+
+/*media screen smartphone*/
+
+@media screen and (max-width: 590px) {
+
+  .box:first-child{
+    width: 50px;
+  }
+
+  .box:last-child{
+    width: calc(100% - 50px);
+  }
+
+  .main-box-sx{
+    display: none;
+  }
+
+  .header-box-sx span.descrizione-logo{
+    display: none;
+  }
+
+  #logo{
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  span.icon{
+    text-align: center;
+    display: block;
+  }
 }
