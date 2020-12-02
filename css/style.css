@@ -68,6 +68,30 @@
   margin-bottom: 60px;
 }
 
+/*box sx*/
+
+.sx{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.main-box-sx{
+  min-height: 150px;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*footer*/
 
 .footer{
