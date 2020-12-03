@@ -14,6 +14,10 @@
   background-color: lightgreen;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
 /*contenitore*/
 
 .contenitore{
@@ -52,17 +56,30 @@
 
 /*box dx*/
 
+.dx{
+  overflow-y: scroll;
+}
+
 .header-upgrade{
   height: 80px;
-  width: 100%;
+  width: calc(100% - 200px);
   background-color: lightslategray;
   text-align: right;
+  line-height: 80px;
+  position: fixed;
+}
+
+.btn-big{
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 10px;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
 .main-contenuti{
   height: calc(100% - 80px);
   width: 100%;
-  overflow-y: auto;
   margin-bottom: 60px;
 }
 
@@ -86,6 +103,10 @@
   vertical-align: middle;
 }
 
+.logo-nav:nth-child(2){
+  display: none;
+}
+
 /*footer*/
 
 .footer{
@@ -106,8 +127,18 @@
     width: calc(100% - 50px);
   }
 
+  .header-box-sx .logo-nav span,
+  .logo-nav:first-child img{
+    display: none;
+  }
+
   .main-box-sx{
     display: none;
   }
 
+  .logo-nav:nth-child(2){
+    display: block;
+  }
+
+  
 }
