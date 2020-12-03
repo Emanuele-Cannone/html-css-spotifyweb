@@ -41,7 +41,7 @@
 /*box*/
 
 .box{
-  height: 100%;
+  /*height: 100%;*/
   width: 200px;
 }
 
@@ -57,7 +57,7 @@
 /*box dx*/
 
 .dx{
-  overflow-y: scroll;
+  
 }
 
 .header-upgrade{
@@ -80,22 +80,28 @@
 .main-contenuti{
   height: calc(100% - 80px);
   width: 100%;
+  margin-top: 80px;
   margin-bottom: 60px;
 }
 
-/*box sx*/
+/*aside box sx*/
 
-.sx{
+aside{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 .main-box-sx{
   min-height: 150px;
-  overflow-y: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.main-box-sx ul{
+  height: 100%;
+  overflow-y: auto;
 }
 
 .logo-nav:not(:first-child)>img{
@@ -113,11 +119,14 @@
   height: 60px;
   background-color: lightgray;
   width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 /*media screen smartphone*/
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 578px) {
 
   .box:first-child{
     width: 50px;
