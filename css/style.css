@@ -56,12 +56,10 @@
   height: 80px;
   width: 100%;
   background-color: lightslategray;
-  position: fixed;
   text-align: right;
 }
 
 .main-contenuti{
-  margin-top: 80px;
   height: calc(100% - 80px);
   width: 100%;
   overflow-y: auto;
@@ -83,13 +81,9 @@
   padding-bottom: 5px;
 }
 
-#logo{
-  font-size: 50px;
-}
-
-span.icon{
-  font-size: 30px;
-  padding: 5px;
+.logo-nav:not(:first-child)>img{
+  width: 30px;
+  vertical-align: middle;
 }
 
 /*footer*/
@@ -97,10 +91,7 @@ span.icon{
 .footer{
   height: 60px;
   background-color: lightgray;
-  z-index: 1;
   width: 100%;
-  left: 0;
-  bottom: 0;
 }
 
 /*media screen smartphone*/
@@ -119,17 +110,4 @@ span.icon{
     display: none;
   }
 
-  .header-box-sx span.descrizione-logo{
-    display: none;
-  }
-
-  #logo{
-    font-size: 30px;
-    padding: 5px;
-  }
-
-  span.icon{
-    text-align: center;
-    display: block;
-  }
 }
