@@ -227,12 +227,44 @@ aside{
 
 .footer{
   height: 60px;
-  background-color: lightgray;
+  background-color: #282828;
   width: 100%;
   position: fixed;
   left: 0;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.elements:first-child{
+  display: flex;
+}
+
+.elements:nth-child(2){
+  flex-grow: 1;
+  text-align: center;
+}
+
+#row-up,
+#row-down{
+  width: 100%;
+}
+
+#row-down span{
+  display: inline-block;
+}
+
+.barra{
+  content: "";
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: #adff2f;
+  height: 3px;
+  border-radius: 10px;
+}
+
 
 /*media screen smartphone*/
 
