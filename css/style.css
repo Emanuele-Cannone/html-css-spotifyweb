@@ -194,6 +194,35 @@ aside{
 
 /*section creato per te*/
 
+#creato-per-te{
+  display: flex;
+}
+
+.customized{
+  width: calc(100% / 6);
+  padding: 10px;
+}
+
+.customized img{
+  width: 100%;
+}
+
+/*section popolari*/
+
+#piu-popolari{
+  display: flex;
+}
+
+.popular{
+  width: calc(100% / 6);
+  padding: 10px;
+}
+
+.popular img{
+  width: 100%;
+  border-radius: 50%;
+}
+
 /*footer*/
 
 .footer{
@@ -247,7 +276,9 @@ aside{
     width: calc(100% / 4 - 20px);
   }  
 
-  .etichetta{
+  .etichetta,
+  .customized,
+  .popular{
     width: calc(100% / 2);
   }
 }
@@ -256,7 +287,9 @@ aside{
 
 @media screen and (min-width: 579px) and (max-width: 991px){
 
-  .etichetta{
+  .etichetta,
+  .customized,
+  .popular{
     width: calc(100% / 2);
   }
 
@@ -269,7 +302,9 @@ aside{
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
   
-  .etichetta{
+  .etichetta,
+  .customized,
+  .popular{
     width: calc(100% / 4);
   }
 
