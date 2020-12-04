@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
 h2,
 h3{
   padding-left: 10px;
@@ -14,7 +18,9 @@ p{
   color: #707070;
 }
 
-
+#myAudio{
+  display: none;
+}
 
 /*classi riutilizzabili*/
 
@@ -239,6 +245,23 @@ aside{
 
 .elements:first-child{
   display: flex;
+  align-items: center;
+}
+
+.elements .miniature{
+  flex-basis: calc(100% / 3);
+  align-items: center;
+}
+
+.miniature:first-child,
+.miniature:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elements img{
+  width: 50px;
 }
 
 .elements:nth-child(2){
@@ -253,6 +276,7 @@ aside{
 
 #row-down span{
   display: inline-block;
+  padding: 0 20px;
 }
 
 .barra{
@@ -263,8 +287,8 @@ aside{
   background-color: #adff2f;
   height: 3px;
   border-radius: 10px;
+  vertical-align: middle;
 }
-
 
 /*media screen smartphone*/
 
