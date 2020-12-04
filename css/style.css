@@ -107,6 +107,11 @@ aside{
   overflow-y: auto;
 }
 
+.main-box-sx ul li:first-child #big{
+  font-size: 40px;
+  padding-right: 3px;
+}
+
 .logo-nav:nth-child(3){
   border-left: 2px solid #adff2f;
 }
@@ -164,7 +169,8 @@ aside{
   padding: 10px 20px;
 }
 
-#in-evidenza ul li a{
+#in-evidenza ul li a,
+.main-box-sx ul li a{
   color: #707070;
   text-decoration: none;
 }
@@ -277,7 +283,6 @@ aside{
 
 .barra{
   content: "";
-  display: block;
   margin: auto;
   width: 50%;
   background-color: #adff2f;
