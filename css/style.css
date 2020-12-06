@@ -69,7 +69,7 @@ p{
 .contenitore{
   height: 100vh;
   width: 100%;
-  background-color: red;
+  background-color: #141922;
   overflow: hidden;
 }
 
@@ -171,7 +171,7 @@ aside{
 .header-upgrade{
   height: 80px;
   width: calc(100% - 200px);
-  background-color: #080b12;
+  background-color: #080b1241;
   text-align: right;
   line-height: 80px;
   position: fixed;
@@ -306,13 +306,19 @@ aside{
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: white;
 }
+
 
 .elements:first-child{
   display: flex;
   align-items: center;
+}
+
+.elements:last-child{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .elements .miniature{
@@ -325,7 +331,6 @@ aside{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .miniature:first-child{
@@ -337,52 +342,72 @@ aside{
 }
 
 .elements:nth-child(2){
-  flex-grow: 2;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#row-up{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  align-items: center;
+}
+
+ul#row-up li{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+#row-down{
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+}
+
+.barra-tempo{
+  content: '';
+  height: 3px;
+  width: 230px;
+  background-color: white;
+}
+
+.barra{
+  content: '';
+  height: 3px;
+  width: 50px;
+  background-color: green;
 }
 
 .footer p{
   font-size: 8px;
 }
 
-#row-up,
-#row-down{
+.volume{
+  display: flex;
   width: 100%;
 }
 
-#row-up span{
-  padding: 0 10px;
+.elements .lello{
+  margin-right: 8px;
+  flex-basis: calc(100% /4 - 8px);
 }
 
-#row-down span{
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.barra{
-  content: "";
-  margin: auto;
-  width: 50%;
-  background-color: #5a5a5a;
+.elements .volume .barra-volume-totale{
   height: 3px;
-  border-radius: 10px;
-  vertical-align: middle;
-}
-
-.elements:last-child{
-  display: flex;
+  width: 40px;
+  background-color: white;
+  margin: 0 10px;
 }
 
 .barra-volume{
-  content: "";
-  margin: auto;
-  width: 70px;
-  background-color: #5a5a5a;
   height: 3px;
-  border-radius: 10px;
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-right: 5px;
+  width: 20px;
+  background-color: green;
 }
 
 /*media screen smartphone*/
