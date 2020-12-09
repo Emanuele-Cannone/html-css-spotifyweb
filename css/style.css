@@ -310,19 +310,20 @@ aside{
   left: 0;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
   color: white;
 }
 
 .elements:first-child{
   display: flex;
   align-items: center;
+  width: 20%;
 }
 
 .elements:last-child{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 20%;
 }
 
 .elements .miniature{
@@ -349,6 +350,7 @@ aside{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 60%;
 }
 
 #row-up{
@@ -368,22 +370,28 @@ ul#row-up li{
 
 #row-down{
   display: flex;
-  justify-content: space-around;
   height: 40px;
   align-items: center;
 }
 
+.ciao{
+  width: 100%;
+}
+
+
+
 .barra-tempo{
   content: '';
   height: 3px;
-  max-width: 230px;
+  width: 50%;
   background-color: white;
+  margin: auto;
 }
 
 .barra{
   content: '';
   height: 3px;
-  max-width: 30px;
+  width: 30%;
   background-color: green;
 }
 
@@ -393,25 +401,22 @@ ul#row-up li{
 
 .volume{
   display: flex;
-  width: 100%;
 }
 
 .elements .lello{
   margin-right: 8px;
-  flex-basis: calc(100% /4 - 8px);
   width: 100%;
 }
 
 .elements .volume .barra-volume-totale{
   height: 3px;
-  width: 40%;
+  width: 100%;
   background-color: white;
-  margin: 0 10px;
 }
 
 .barra-volume{
   height: 3px;
-  width: 20%;
+  width: 30%;
   background-color: green;
 }
 
@@ -420,8 +425,6 @@ ul#row-up li{
     display: none;
   }
 }
-
-
 
 @media screen and (max-width: 426px){
   .footer{
