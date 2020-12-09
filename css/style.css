@@ -410,6 +410,18 @@ ul#row-up li{
   background-color: green;
 }
 
+
+
+
+
+@media screen and (max-height: 350px){
+
+  .header-upgrade .btn-big{
+    display: none;
+  }
+}
+
+
 /*media screen smartphone*/
 
 @media screen and (max-width: 578px) {
