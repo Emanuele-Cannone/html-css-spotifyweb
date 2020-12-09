@@ -18,6 +18,11 @@ p{
   color: #707070;
 }
 
+.hover:hover{
+  cursor: pointer;
+  color: white;
+}
+
 /*classi riutilizzabili*/
 
 .bg-blue{
@@ -309,7 +314,6 @@ aside{
   color: white;
 }
 
-
 .elements:first-child{
   display: flex;
   align-items: center;
@@ -372,14 +376,14 @@ ul#row-up li{
 .barra-tempo{
   content: '';
   height: 3px;
-  width: 230px;
+  max-width: 230px;
   background-color: white;
 }
 
 .barra{
   content: '';
   height: 3px;
-  width: 50px;
+  max-width: 30px;
   background-color: green;
 }
 
@@ -395,24 +399,22 @@ ul#row-up li{
 .elements .lello{
   margin-right: 8px;
   flex-basis: calc(100% /4 - 8px);
+  width: 100%;
 }
 
 .elements .volume .barra-volume-totale{
   height: 3px;
-  width: 40px;
+  max-width: 40px;
+  min-width: 10px;
   background-color: white;
   margin: 0 10px;
 }
 
 .barra-volume{
   height: 3px;
-  width: 20px;
+  width: 50%;
   background-color: green;
 }
-
-
-
-
 
 @media screen and (max-height: 350px){
 
@@ -421,6 +423,19 @@ ul#row-up li{
   }
 }
 
+
+
+@media screen and (max-width: 360px){
+
+  .footer .lello{
+    font-size: 10px;
+    flex-basis: calc(100% /3 - 8px);
+  }
+
+  .footer .elements:last-child .volume{
+    display: block;
+  }
+}
 
 /*media screen smartphone*/
 
@@ -448,7 +463,8 @@ ul#row-up li{
   }
 
   .header-box-sx .logo-nav span,
-  .logo-nav:first-child img{
+  .logo-nav:first-child img,
+  .footer-box-sx span{
     display: none;
   }
 
