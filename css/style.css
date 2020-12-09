@@ -404,20 +404,18 @@ ul#row-up li{
 
 .elements .volume .barra-volume-totale{
   height: 3px;
-  max-width: 40px;
-  min-width: 10px;
+  width: 40%;
   background-color: white;
   margin: 0 10px;
 }
 
 .barra-volume{
   height: 3px;
-  width: 50%;
+  width: 20%;
   background-color: green;
 }
 
 @media screen and (max-height: 350px){
-
   .header-upgrade .btn-big{
     display: none;
   }
@@ -425,16 +423,21 @@ ul#row-up li{
 
 
 
-@media screen and (max-width: 360px){
-
-  .footer .lello{
+@media screen and (max-width: 426px){
+  .footer{
     font-size: 10px;
-    flex-basis: calc(100% /3 - 8px);
   }
 
-  .footer .elements:last-child .volume{
-    display: block;
+  .elements:last-child{
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
   }
+
+  .barra-volume-totale{
+    margin: auto;
+  }
+
 }
 
 /*media screen smartphone*/
