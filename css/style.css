@@ -116,6 +116,11 @@ aside{
   color: #707070
 }
 
+.header-box-sx .logo-nav:first-child img{
+  padding: 10px 0;
+  height: 70px;
+}
+
 .sx ul li{
   padding: 5px 0;
   list-style: none;
@@ -134,7 +139,8 @@ aside{
 
 .main-box-sx ul li:first-child #big{
   font-size: 40px;
-  padding-right: 3px;
+  padding-right: 5px;
+  vertical-align: middle;
 }
 
 .logo-nav:nth-child(3){
@@ -239,32 +245,33 @@ aside{
 
 .etichetta{
   padding: 10px;
-  width: calc(100% / 6);
-  position: relative;
+  width: calc(100% / 6 - 1px);
 }
 
-.etichetta img{
+.play img{
   width: 100%;
 }
 
-.etichetta:hover::after,
-.customized:hover::after,
-.popular:hover::after{
-  content: "\f144";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  color: white;
+.play{
+  position: relative;
 }
 
-.etichetta img:hover,
-.customized img:hover,
-.popular img:hover{
- opacity: 0.5;
+.play i{
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.play:hover i{
+  display: block;
+}
+
+.play:hover img{
+ opacity: 0.2;
 }
 
 /*section creato per te*/
@@ -374,10 +381,16 @@ ul#row-up li{
   align-items: center;
 }
 
+.tempo:first-child{
+  padding-left: 70px;
+}
+.tempo:last-child{
+  padding-right: 70px;
+}
+
 .ciao{
   width: 100%;
 }
-
 
 
 .barra-tempo{
